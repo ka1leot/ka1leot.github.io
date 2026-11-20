@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Фёдор Медведев — портфолио</title>
+<meta name="description" content="Unity-разработчик и веб-разработчик из Самары. Игры на Unity, сайт и Telegram-бот «Мое Расписание».">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/238816004?v=4">
+<style>
+  :root{--bg:#0d0f14;--card:#151922;--line:#232938;--text:#e8ebf2;--muted:#8b93a7;--accent:#7c9cff;--accent2:#4fd1a5}
+  @media (prefers-color-scheme: light){:root{--bg:#f6f7fb;--card:#fff;--line:#e3e6ee;--text:#151922;--muted:#5f677a;--accent:#3d5afe;--accent2:#0f9d74}}
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:880px;margin:0 auto;padding:56px 16px 40px}
+  a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+  header{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+  header img{width:96px;height:96px;border-radius:50%;border:2px solid var(--line)}
+  h1{font-size:clamp(28px,5vw,40px);line-height:1.15}
+  .role{color:var(--muted);margin-top:4px}
+  .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+  .btn{border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;color:var(--text);background:var(--card)}
+  .btn:hover{border-color:var(--accent);text-decoration:none}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  h2{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:56px 0 16px}
+  p.lead{max-width:640px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{font-size:13px;padding:3px 10px;border-radius:6px;background:var(--card);border:1px solid var(--line);color:var(--muted)}
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:10px}
+  .card.wide{grid-column:1/-1}
+  .card h3{font-size:20px}
+  .card .kind{font-size:12px;color:var(--accent2);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+  .card p{color:var(--muted)}
+  .card ul{color:var(--muted);padding-left:18px}
+  .card .links{margin-top:auto;padding-top:6px}
+  footer{margin-top:64px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:20px}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="https://avatars.githubusercontent.com/u/238816004?v=4" alt="Аватар Фёдора Медведева">
+    <div>
+      <h1>Фёдор Медведев</h1>
+      <div class="role">Unity-разработчик · веб-разработчик · Самара</div>
+      <div class="links">
+        <a class="btn primary" href="https://github.com/ka1leot">GitHub</a>
+        <a class="btn" href="https://t.me/Raspisanie24Bot">Telegram-бот</a>
+        <a class="btn" href="https://guns.lol/awful_s">Все ссылки</a>
+      </div>
+    </div>
+  </header>
+
+  <h2>Обо мне</h2>
+  <p class="lead">Делаю инди-игры на Unity и веб-сервисы, которыми пользуются реальные люди. Довожу проекты до продакшена сам: от геймплея и интерфейса до сервера, базы данных и оплаты. Открыт к предложениям о работе.</p>
+
+  <h2>Навыки</h2>
+  <div class="tags">
+    <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">3D</span>
+    <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JavaScript</span>
+    <span class="tag">PWA / Service Worker</span><span class="tag">Telegram Bot API</span>
+    <span class="tag">Telegram Mini Apps</span><span class="tag">Cloudflare Workers</span><span class="tag">Git</span>
+  </div>
+
+  <h2>Проекты</h2>
+  <div class="grid">
+    <article class="card wide">
+      <span class="kind">Веб · Telegram · в продакшене</span>
+      <h3>Мое Расписание</h3>
+      <p>Сайт, Telegram-бот и Mini App с расписанием занятий для студентов СФ СамГТУ. Расписание автоматически берётся из таблиц колледжа.</p>
+      <ul>
+        <li>PHP + MySQL, работает как приложение (PWA) и офлайн</li>
+        <li>Telegram-бот и Mini App, уведомления об изменениях</li>
+        <li>Подписка: оплата в Telegram Stars и рублях</li>
+        <li>Админ-панель, ретранслятор обновлений на Cloudflare Workers</li>
+      </ul>
+      <div class="links">
+        <a class="btn primary" href="https://sf-moe-raspisanie.ru">Открыть сайт</a>
+        <a class="btn" href="https://t.me/Raspisanie24Bot">@Raspisanie24Bot</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <span class="kind">Игра · Unity · C#</span>
+      <h3>The Scavenger</h3>
+      <p>3D-игра: собирай мусор по уровню и выбрасывай его в урну.</p>
+      <div class="links"><a class="btn" href="https://github.com/ka1leot/The-Scavenger">Код на GitHub</a></div>
+    </article>
+
+    <article class="card">
+      <span class="kind">Игра · Unity · C#</span>
+      <h3>2048 3D</h3>
+      <p>Классическая головоломка 2048 в трёхмерном виде.</p>
+      <div class="links"><a class="btn" href="https://github.com/ka1leot/2048">Код на GitHub</a></div>
+    </article>
+  </div>
+
+  <footer>© 2026 Фёдор Медведев · <a href="https://github.com/ka1leot">github.com/ka1leot</a></footer>
+</main>
+</body>
+</html>
